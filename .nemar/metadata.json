@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "dataset_id": "on007720",
-  "source": "openneuro",
-  "source_id": "ds007720",
+  "pipeline_stage": "validated",
   "title": "BCI-FIT: A customization protocol for communication brain-computer interface systems.",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Betts Peters": {},
     "Daniel Klee": {},
@@ -17,27 +17,81 @@
     "Barry Oken": {},
     "Melanie Fried-Oken": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds007720.v1.0.1",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on007720",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on007720",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
-  ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.7.0",
-  "recording_modality": [
-    "eeg"
-  ],
-  "datatypes": [
-    "eeg"
   ],
   "funding_references": [
     {
-      "funder_name": "This work was supported by the National Institutes of Health under National Institute on Deafness and Other Communication Disorders grant R01DC009834."
+      "funder_name": "National Institutes of Health",
+      "award_number": "R01DC009834",
+      "award_title": "National Institute on Deafness and Other Communication Disorders"
     }
   ],
-  "acknowledgements": "These studies were approved by the Oregon Health & Science University Institutional Review Board (IRB#26456). The studies were conducted in accordance with the local legislation and institutional requirements. The participants provided their written informed consent to participate in this study. We thank the Consortium of Accessible Multimodal Brain-Body Interfaces (CAMBI) for their insight and guidance over the course of the experiment. Additionally, we would like to thank all the participants for their time and effort in contributing to this research."
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "eeg"
+  ],
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".eeg",
+    ".json",
+    ".md",
+    ".tsv",
+    ".vhdr",
+    ".vmrk",
+    ".yml"
+  ],
+  "description": "BCI-FIT is a customization protocol dataset for non-implantable communication brain-computer interface (cBCI) systems, comprising EEG recordings from five participants with speech and/or physical impairments due to amyotrophic lateral sclerosis (ALS). Participants completed calibration and copy-spelling tasks using both customized and non-customized cBCI versions across multiple visits, with system parameters iteratively adjusted based on performance, preferences, and signal characteristics. The dataset includes EEG data collected at 300 Hz from dry electrode caps (DSI-Flex or DSI-24) during Matrix and RSVP typing paradigms, processed and organized according to BIDS specification version 1.7.0.",
+  "methods_description": "EEG activity was recorded from dry electrode caps (DSI-Flex with 7 channels or DSI-24 with 24 channels) at 300 Hz using an averaged linked-ear reference and active common-mode follower. Data were downsampled to 150 Hz and filtered between 1-20 Hz (2nd-order) with 60 Hz notch filtering. Participants completed calibration tasks (55 inquiries per task) and copy-spelling tasks (copying four five-letter words per condition) using Matrix or RSVP typing layouts presented on a 24\" monitor at 144 Hz refresh rate. Stimulus presentation was controlled via BciPy 2.0 with character intensification at 5 Hz.",
+  "keywords": [
+    {
+      "term": "Brain-Computer Interfaces",
+      "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
+    },
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "Amyotrophic Lateral Sclerosis",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D000690"
+    },
+    {
+      "term": "Communication Disorders",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D003147"
+    },
+    {
+      "term": "motor imagery"
+    },
+    {
+      "term": "P300"
+    },
+    {
+      "term": "RSVP"
+    },
+    {
+      "term": "assistive technology"
+    }
+  ],
+  "source_hash": "1294808a949e754fe261a5d06aaeb9fcffcf6ba659e153f391fa40904a61d601"
 }
