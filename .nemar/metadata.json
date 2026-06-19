@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "BCI-FIT: A customization protocol for communication brain-computer interface systems.",
+  "description": "BCI-FIT is a customization protocol dataset for non-implantable communication brain-computer interface (cBCI) systems, comprising EEG recordings from five participants with speech and/or physical impairments due to amyotrophic lateral sclerosis (ALS). Participants completed calibration and copy-spelling tasks using both customized and non-customized versions of a cBCI system across multiple visits, with iterative system adjustments based on performance, preferences, and signal characteristics. The dataset includes high-resolution EEG data collected from dry electrode caps (DSI-Flex or DSI-24) sampled at 300 Hz during Matrix and RSVP typing paradigms.",
+  "methods_description": "EEG activity was recorded using dry electrode caps (DSI-Flex with 7 channels or DSI-24 with 24 channels) with hardware filtering (0.003-150 Hz bandwidth), sampled at 300 Hz with linked-ear reference and active common-mode follower. Data were downsampled to 150 Hz and filtered between 1-20 Hz (2nd-order) with 60 Hz notch filtering. Participants completed calibration tasks (55 inquiries per task) and copy-spelling tasks using Matrix or RSVP layouts presented at 5 Hz on a 24\" monitor. Testing was conducted on an MSI Trident 3 desktop with Nvidia RTX 3060 GPU, 12th-gen Intel i7-12700 CPU, and 16 GB RAM running Windows 11 Professional.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -17,12 +19,32 @@
     "Barry Oken": {},
     "Melanie Fried-Oken": {}
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds007720.v1.0.1",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "Brain-Computer Interfaces",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
     },
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "amyotrophic lateral sclerosis"
+    },
+    {
+      "term": "motor imagery"
+    },
+    {
+      "term": "P300"
+    },
+    {
+      "term": "communication disorders"
+    },
+    {
+      "term": "assistive technology"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/on007720",
       "identifier_type": "URL",
@@ -32,6 +54,11 @@
       "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on007720",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds007720.v1.0.1",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "funding_references": [
@@ -42,12 +69,12 @@
     }
   ],
   "resource_type_general": "Dataset",
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "0.0 KB (1114 files)"
   ],
   "formats": [
     ".eeg",
@@ -58,40 +85,5 @@
     ".vmrk",
     ".yml"
   ],
-  "description": "BCI-FIT is a customization protocol dataset for non-implantable communication brain-computer interface (cBCI) systems, comprising EEG recordings from five participants with speech and/or physical impairments due to amyotrophic lateral sclerosis (ALS). Participants completed calibration and copy-spelling tasks using both customized and non-customized cBCI versions across multiple visits, with system parameters iteratively adjusted based on performance, preferences, and signal characteristics. The dataset includes EEG data collected at 300 Hz from dry electrode caps (DSI-Flex or DSI-24) during Matrix and RSVP typing paradigms, processed and organized according to BIDS specification version 1.7.0.",
-  "methods_description": "EEG activity was recorded from dry electrode caps (DSI-Flex with 7 channels or DSI-24 with 24 channels) at 300 Hz using an averaged linked-ear reference and active common-mode follower. Data were downsampled to 150 Hz and filtered between 1-20 Hz (2nd-order) with 60 Hz notch filtering. Participants completed calibration tasks (55 inquiries per task) and copy-spelling tasks (copying four five-letter words per condition) using Matrix or RSVP typing layouts presented on a 24\" monitor at 144 Hz refresh rate. Stimulus presentation was controlled via BciPy 2.0 with character intensification at 5 Hz.",
-  "keywords": [
-    {
-      "term": "Brain-Computer Interfaces",
-      "subject_scheme": "MeSH",
-      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
-    },
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "Amyotrophic Lateral Sclerosis",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D000690"
-    },
-    {
-      "term": "Communication Disorders",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D003147"
-    },
-    {
-      "term": "motor imagery"
-    },
-    {
-      "term": "P300"
-    },
-    {
-      "term": "RSVP"
-    },
-    {
-      "term": "assistive technology"
-    }
-  ],
-  "source_hash": "1294808a949e754fe261a5d06aaeb9fcffcf6ba659e153f391fa40904a61d601"
+  "source_hash": "fc9fa6e15836ba0f5c4cdfae55022b0d4549664e4b84496127c59e76b5e33dec"
 }
