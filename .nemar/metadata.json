@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "BCI-FIT: A customization protocol for communication brain-computer interface systems.",
-  "description": "BCI-FIT is a customization protocol dataset for non-implantable communication brain-computer interface (cBCI) systems, comprising EEG recordings from five participants with speech and/or physical impairments due to amyotrophic lateral sclerosis (ALS). Participants completed calibration and copy-spelling tasks using both customized and non-customized versions of a cBCI system across multiple visits, with iterative system adjustments based on performance, preferences, and signal characteristics. The dataset includes high-resolution EEG data collected from dry electrode caps (DSI-Flex or DSI-24) sampled at 300 Hz during Matrix and RSVP typing paradigms.",
-  "methods_description": "EEG activity was recorded using dry electrode caps (DSI-Flex with 7 channels or DSI-24 with 24 channels) with hardware filtering (0.003-150 Hz bandwidth), sampled at 300 Hz with linked-ear reference and active common-mode follower. Data were downsampled to 150 Hz and filtered between 1-20 Hz (2nd-order) with 60 Hz notch filtering. Participants completed calibration tasks (55 inquiries per task) and copy-spelling tasks using Matrix or RSVP layouts presented at 5 Hz on a 24\" monitor. Testing was conducted on an MSI Trident 3 desktop with Nvidia RTX 3060 GPU, 12th-gen Intel i7-12700 CPU, and 16 GB RAM running Windows 11 Professional.",
+  "description": "BCI-FIT is a customization protocol dataset for non-implantable communication brain-computer interface (cBCI) systems, comprising EEG recordings from five participants with speech and/or physical impairments due to amyotrophic lateral sclerosis (ALS). Participants completed calibration and copy-spelling tasks using both customized and non-customized versions of a cBCI system across multiple visits, with iterative system adjustments based on performance, preferences, and signal characteristics. The dataset includes EEG data collected using dry electrode caps (DSI-Flex or DSI-24) sampled at 300 Hz during Matrix and RSVP typing paradigms.",
+  "methods_description": "EEG activity was recorded using dry electrode caps (DSI-Flex with 7 channels or DSI-24 with 24 channels) with hardware filtering (0.003-150 Hz bandwidth), sampled at 300 Hz with linked-ear reference and active common-mode follower. Data were downsampled to 150 Hz and filtered between 1-20 Hz (2nd-order) with 60 Hz notch filtering. Participants completed calibration tasks (55 inquiries per task) and copy-spelling tasks using Matrix or RSVP layouts presented at 5 Hz on a 24\" monitor. Testing was conducted on an MSI Trident 3 desktop with Nvidia RTX 3060 GPU and 12th-gen Intel i7 processor.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -32,13 +32,13 @@
       "term": "amyotrophic lateral sclerosis"
     },
     {
+      "term": "communication disorders"
+    },
+    {
       "term": "motor imagery"
     },
     {
       "term": "P300"
-    },
-    {
-      "term": "communication disorders"
     },
     {
       "term": "assistive technology"
