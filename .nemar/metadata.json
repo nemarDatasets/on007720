@@ -32,13 +32,13 @@
       "term": "amyotrophic lateral sclerosis"
     },
     {
-      "term": "communication disorders"
-    },
-    {
       "term": "motor imagery"
     },
     {
       "term": "P300"
+    },
+    {
+      "term": "communication disorders"
     },
     {
       "term": "assistive technology"
@@ -51,14 +51,14 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on007720",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.18112/openneuro.ds007720.v1.0.1",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on007720",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "funding_references": [
@@ -74,7 +74,7 @@
     "eeg"
   ],
   "sizes": [
-    "0.0 KB (1114 files)"
+    "2.3 GB (1114 files)"
   ],
   "formats": [
     ".eeg",
