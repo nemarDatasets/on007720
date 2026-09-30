@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "BCI-FIT: A customization protocol for communication brain-computer interface systems.",
-  "description": "BCI-FIT is a customization protocol dataset for non-implantable communication brain-computer interface (cBCI) systems, comprising EEG recordings from five participants with speech and/or physical impairments due to amyotrophic lateral sclerosis (ALS). Participants completed calibration and copy-spelling tasks using both customized and non-customized versions of a cBCI system across multiple visits, with iterative system adjustments based on performance, preferences, and signal characteristics. The dataset includes EEG data collected using dry electrode caps (DSI-Flex or DSI-24) sampled at 300 Hz during Matrix and RSVP typing paradigms.",
-  "methods_description": "EEG activity was recorded using dry electrode caps (DSI-Flex with 7 channels or DSI-24 with 24 channels) with hardware filtering (0.003-150 Hz bandwidth), sampled at 300 Hz with linked-ear reference and active common-mode follower. Data were downsampled to 150 Hz and filtered between 1-20 Hz (2nd-order) with 60 Hz notch filtering. Participants completed calibration tasks (55 inquiries per task) and copy-spelling tasks using Matrix or RSVP layouts presented at 5 Hz on a 24\" monitor. Testing was conducted on an MSI Trident 3 desktop with Nvidia RTX 3060 GPU and 12th-gen Intel i7 processor.",
+  "description": "EEG recordings from five participants with speech and/or physical impairments due to amyotrophic lateral sclerosis (ALS) who used a non-implantable communication brain-computer interface (cBCI) over multiple visits. Participants completed calibration and copy-spelling tasks with Matrix and RSVP layouts, in both customized and non-customized system configurations. Customization was iteratively adjusted based on typing performance, preferences, clinical observations, brain signal characteristics, and offline simulations. The data are organized in BIDS format.",
+  "methods_description": "EEG was recorded with Wearable Sensing dry-electrode caps (DSI-Flex or DSI-24) via Lab Streaming Layer at 300 Hz, then downsampled to 150 Hz and filtered at 1-20 Hz with a 60 Hz notch. Tasks were run with BciPy 2.0 using Matrix and RSVP typing layouts. Calibration used 55 inquiries of 14 characters presented at 5 Hz. Copy-spelling required participants to copy five-letter words, with adaptive stopping based on a classifier confidence threshold of 0.8.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -11,37 +11,51 @@
     "Daniel Klee": {},
     "Michelle Kinsella": {},
     "Yonah Hendin": {},
-    "Tab Memmott": {},
+    "Tab Memmott": {
+      "orcid": "0000-0001-6143-5057",
+      "affiliations": [
+        {
+          "name": "Department of Neurology and School of Medicine, Oregon Health & Science University, Portland, OR, USA"
+        }
+      ]
+    },
     "Matthew Lawhead": {},
     "Srikar Ananthoju": {},
     "Basak Celik": {},
     "Scott Spaulding": {},
-    "Barry Oken": {},
+    "Barry Oken": {
+      "orcid": "0000-0002-3781-4273",
+      "affiliations": [
+        {
+          "name": "Department of Neurology and School of Medicine, Oregon Health & Science University, Portland, OR, USA"
+        }
+      ]
+    },
     "Melanie Fried-Oken": {}
   },
   "keywords": [
     {
-      "term": "Brain-Computer Interfaces",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
-    },
-    {
       "term": "EEG"
     },
     {
-      "term": "amyotrophic lateral sclerosis"
+      "term": "brain-computer interface"
     },
     {
-      "term": "motor imagery"
+      "term": "Amyotrophic Lateral Sclerosis",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D000690"
     },
     {
-      "term": "P300"
+      "term": "augmentative and alternative communication"
     },
     {
-      "term": "communication disorders"
+      "term": "RSVP"
     },
     {
-      "term": "assistive technology"
+      "term": "P300 speller"
+    },
+    {
+      "term": "customization"
     }
   ],
   "related_identifiers": [
@@ -59,13 +73,27 @@
       "identifier": "https://nemar.org/dataset/on007720",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1080/2326263x.2021.1878727",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "10.21105/joss.01896",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "10.1038/s41597-019-0104-8",
+      "identifier_type": "DOI",
+      "relation_type": "References"
     }
   ],
   "funding_references": [
     {
       "funder_name": "National Institutes of Health",
-      "award_number": "R01DC009834",
-      "award_title": "National Institute on Deafness and Other Communication Disorders"
+      "award_number": "R01DC009834"
     }
   ],
   "resource_type_general": "Dataset",
@@ -74,7 +102,7 @@
     "eeg"
   ],
   "sizes": [
-    "2.3 GB (1114 files)"
+    "2.15 GB (1114 files)"
   ],
   "formats": [
     ".eeg",
